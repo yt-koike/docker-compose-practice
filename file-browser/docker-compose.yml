@@ -1,0 +1,7 @@
+services:
+  filebrowser:
+    image: docker.io/filebrowser/filebrowser
+    ports:
+      - 80:80
+    volumes:
+      - ./root:/srv

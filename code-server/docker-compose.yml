@@ -1,0 +1,15 @@
+services:
+  code-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: code-server
+    ports:
+      - 80:8443
+    environment:
+      - TZ=Asia/Tokyo
+      - SUDO_PASSWORD=root
+      # - PASSWORD=password
+    volumes:
+      - ./config:/config
+    restart: unless-stopped

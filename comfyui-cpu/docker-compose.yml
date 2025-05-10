@@ -1,0 +1,11 @@
+services:
+  comfyui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./models:/ComfyUI/models
+      - ./output:/ComfyUI/output
+      - ./custom_nodes:/ComfyUI/custom_nodes
+    ports:
+      - "80:8188"

@@ -1,0 +1,7 @@
+services:
+  nginx:
+    image: docker.io/nginx
+    volumes:
+      - ./contents:/usr/share/nginx/html:ro
+    ports:
+      - 80:80

@@ -1,0 +1,5 @@
+services:
+  jupyter-notebook:
+    image: docker.io/jupyter/scipy-notebook
+    ports:
+      - "80:8888"
