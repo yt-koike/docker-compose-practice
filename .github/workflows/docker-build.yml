@@ -14,7 +14,7 @@ jobs:
     - name: Build docker image
       uses: docker/build-push-action@v6
       with:
-        context: .
+        context: comfyui-cpu/
         push: false
         cache-from: type=gha
         cache-to: type=gha
